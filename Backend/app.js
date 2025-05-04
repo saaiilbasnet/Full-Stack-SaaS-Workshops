@@ -7,7 +7,7 @@ require("./database/connection")
 
 const bookRoute = require('./routes/bookRoute')
 
-app.use("/api",bookRoute);
+app.use("",bookRoute);
 
 
 //Listening/Confirming
