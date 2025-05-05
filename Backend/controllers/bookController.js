@@ -8,11 +8,11 @@ exports.fetchBooks = async (req, res) => {
 
     res.json({
       message: "Books fetch successfully",
-      datas: datas,
+      datas: datas
     });
   } catch (error) {
     res.json({
-      message: "Something went wrong",
+      message: "Something went wrong"
     });
   }
 };
@@ -25,7 +25,7 @@ exports.addBooks = async (req, res) => {
   if (!bookName || !bookPrice || !bookAuthor || !bookGenre) {
     //validation code to prevent null values from the user
     return res.status(400).json({
-      message: "Please enter all details",
+      message: "Please enter all details"
     });
   } else {
     try {
@@ -33,17 +33,17 @@ exports.addBooks = async (req, res) => {
         bookName: bookName, //columnName : value
         bookPrice: bookPrice,
         bookAuthor: bookAuthor,
-        bookGenre: bookGenre,
+        bookGenre: bookGenre
       });
 
       res.json({
-        message: "Book added successfully",
+        message: "Book added successfully"
       });
     } catch (error) {
       console.log(err);
 
       res.status(500).json({
-        message: "Server error",
+        message: "Server error"
       });
     }
   }
@@ -57,16 +57,16 @@ exports.deleteBooks = async (req, res) => {
 
     await books.destroy({
       where: {
-        id: id, //where id == id
-      },
+        id: id //where id == id
+      }
     });
 
     res.json({
-      message: "Book deleted successfully",
+      message: "Book deleted successfully"
     });
   } catch (error) {
     res.json({
-      message: "Something went wrong",
+      message: "Something went wrong"
     });
   }
 };
@@ -86,17 +86,17 @@ try {
         bookName: bookName,
         bookPrice: bookPrice,
         bookAuthor: bookAuthor,
-        bookGenre: bookGenre,
+        bookGenre: bookGenre
       },
       {
         where: {
-          id: id,
+          id: id
         },
       }
     );
   
     res.json({
-      message: "Books updated successfully",
+      message: "Books updated successfully"
     });
 }catch(error){
     res.json({
@@ -116,7 +116,7 @@ try{
   
     res.json({
       message: "Single book fetched successfully",
-      data: data,
+      data: data
     });
 }catch(error){
     res.json({
