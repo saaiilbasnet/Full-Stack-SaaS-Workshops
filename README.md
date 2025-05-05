@@ -58,4 +58,4 @@ This repository is part of my 12-day journey of learning the MERN Stack. The pro
 1. **Clone the repository**
    ```bash
    git clone https://github.com/saaiilbasnet/Full-Stack-SaaS-Workshops.git
-   cd book-api
+   cd Full-Stack-SaaS-Workshops
