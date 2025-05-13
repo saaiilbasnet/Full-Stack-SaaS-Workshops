@@ -1,20 +1,19 @@
+import {BrowserRouter, Routes, Route}  from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import SinglePage from "./pages/SinglePage"
+import CreatePage from "./pages/CreatePage"
+import EditPage from "./pages/EditPage"
 
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Home from "./Home"
-import About from "./About"
-import Contact from "./Contact"
-
-// component as it returns a jsx
 function App() {
 
-// using react-router-dom
   return (
 
     <BrowserRouter>
     <Routes>
-      <Route path="/" element ={<Home />} />
-      <Route path="/about" element ={<About />} />
-      <Route path="/contact" element ={<Contact />} />
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/single-page" element={<SinglePage />} />
+      <Route path="/create-page" element={<CreatePage />} />
+      <Route path="/edit-page" element={<EditPage/>} />
     </Routes>
     </BrowserRouter>
 
