@@ -1,6 +1,8 @@
+import NavBar from "../components/NavBar"
+
 function CreatePage(){
     return (
-        <h1>Create Page</h1>
+        <NavBar/>
     )
 }
 

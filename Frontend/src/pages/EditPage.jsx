@@ -1,6 +1,8 @@
+import NavBar from "../components/NavBar"
+
 function EditPage(){
     return (
-        <h1>Edit Page</h1>
+<NavBar/>
     )
 }
 

@@ -1,6 +1,8 @@
+import NavBar from "../components/NavBar"
+
 function SinglePage(){
     return (
-        <h1>Single Page</h1>
+<NavBar/>
     )
 }
 
