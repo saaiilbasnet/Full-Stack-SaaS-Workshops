@@ -1,5 +1,4 @@
-const express = require('express') //importing express
-const { books } = require('./database/connection')
+const express = require('express') // importing express
 const app = express() //fucntion calling
 // const app = require('express')()
 
@@ -7,6 +6,7 @@ const app = express() //fucntion calling
 const cors = require("cors");
 
 //using cors
+
 app.use(cors({
     origin : "http://localhost:5173"
 }))
