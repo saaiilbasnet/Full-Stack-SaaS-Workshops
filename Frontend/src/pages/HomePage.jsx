@@ -11,7 +11,6 @@ function HomePage(){
    console.log(response.data.datas);
    
   }
-
   useEffect(()=>{
   fetchBooks()    
   },[])
@@ -19,7 +18,6 @@ function HomePage(){
     return (
         <>
 <NavBar/>
-
 <div className="flex flex-wrap mt-4" >
 {
 books.map(function(book){
@@ -28,7 +26,6 @@ books.map(function(book){
     )
 })
 }
-  
 </div>
         </>
     )
