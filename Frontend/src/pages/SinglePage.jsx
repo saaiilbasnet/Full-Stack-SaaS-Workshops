@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import NavBar from "../components/NavBar"
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -42,6 +42,12 @@ function SinglePage(){
                           <button onClick={deleteBook} className="cursor-pointer mt-4 rounded-md bg-red-600 px-5 py-2.5 text-sm font-medium text-white shadow">
               Delete
             </button>
+
+            <Link to={`/edit-page/${book.id}`}>
+                          <button className="cursor-pointer ml-2 mt-4 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow">
+              Edit
+            </button>
+            </Link>
 </div>
     )
 }
